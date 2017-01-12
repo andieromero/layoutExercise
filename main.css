@@ -7,14 +7,16 @@ body {
 section {
 	background-color: #FFFFFF;
 	padding: 10px 10px;
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0 rgba(0, 0, 0, 0.19);
 }
 main, aside {
 	display: inline-block;
 	vertical-align: top;
+	margin-top: 30px;
 }
 main {
 	width: 70%;
-	border-right: 1px solid black;
+	border-right: 1px solid #F6F6F6;
 }
 
 aside {
@@ -33,6 +35,7 @@ ul {
 li {
 	list-style: none;
 	position: relative;
+	font-size: 12px;
 }
 a {
 	text-decoration: none;
@@ -51,10 +54,13 @@ p > img, a > img {
 /****** Navigation Style *********/
 .menu > li {
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 10px;
+    padding: 4px;
 }
 .menu > li:hover {
 	background-color: #5079A5;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 .submenu, .submenu2{
     position: absolute;
@@ -73,7 +79,6 @@ p > img, a > img {
 }
 .submenu a {
 	margin: 5px 8px;
-	font-size: 14px;
 }
 .menu > li:hover .submenu, .submenu > li:hover .submenu2{
 	left: 0;
@@ -92,19 +97,28 @@ p > img, a > img {
 }
 .menu > li:last-child {
 	float: right;
+	background-color: #FFFFFF;
+}
+input, button {
+	height: 25px;
+    position: relative;
 }
 input {
 	background-color: #F6F6F6;
-    width: 240px;
+    min-width: 190px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border: solid 1px #cbc8c8;
+    top: -5px;
 }
 button {
 	border: solid 1px #426489;
     background-color: #5079a5;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+    color: #FFFFFF;
+    top: -6px;
+    font-size: 10px;
 }
 /****** Article/Aside Styles *********/
 article img, article section {
@@ -112,7 +126,9 @@ article img, article section {
 	vertical-align: top;
 }
 article section {
-	width: 80%;
+	padding-top: 0px;
+	width: 77%;
+	box-shadow: none;
 }
 article > img {
 	width: 17%
@@ -124,6 +140,14 @@ p > img {
 article a {
 	color: #5079A5;
 }
+article a:hover {
+	opacity: .5;
+      -o-transition: .45s;
+      -ms-transition:  .45s;
+      -moz-transition: .45s;
+      -webkit-transition: .45s;
+      transition: .5s;	
+}
 .left {
 	float: left;
 }
@@ -133,6 +157,8 @@ article a {
 hr {
 	clear: both;
 	border-color: #CCCCCC;
+    width: 95%;
+    opacity: .1;
 }
 aside img {
 	width: 90%;
