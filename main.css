@@ -1,0 +1,94 @@
+/****** General Styles *********/
+body {
+	background-color: #F6F6F6;
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 0;
+}
+section {
+	background-color: #FFFFFF;
+}
+main, aside {
+	display: inline-block;
+	vertical-align: top;
+}
+main {
+	width: 70%;
+	border-right: 1px solid black;
+}
+aside {
+	width: 29%;
+	text-align: center;
+}
+ul {
+	padding: 0px;
+}
+li {
+	list-style: none;
+	position: relative;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+	display: inline-block;	
+}
+/****** Navigation Style *********/
+.menu > li {
+	display: inline-block;
+}
+.menu > li:hover {
+	background-color: #5079A5;
+}
+.submenu, .submenu2{
+    position: absolute;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0px;
+	background-color: #5079A5;
+	left: -1000px;
+    top: -1000px;
+	opacity: 0;
+      -o-transition: opacity .45s;
+      -ms-transition:  opacity .45s;
+      -moz-transition: opacity .45s;
+      -webkit-transition: opacity .45s;
+      transition: opacity .5s;	
+}
+.submenu a {
+	margin: 5px 8px;
+}
+.menu > li:hover .submenu, .submenu > li:hover .submenu2{
+	left: 0;
+    top: 100%;
+	opacity: 1;
+}
+.menu > li:hover a {
+	color: #FFFFFF;
+}
+.submenu  li:hover{
+	background-color: #4A658B;
+}
+.submenu > li:hover .submenu2{
+	top: 0px;
+	left: 250px;
+}
+input {
+	background-color: #F6F6F6;
+}
+
+/****** Article Styles *********/
+article img, article section {
+	display: inline-block;
+}
+article a {
+	color: #5079A5;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+hr {
+	clear: both;
+}
+/****** Footer Style *********/
