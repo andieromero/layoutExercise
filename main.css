@@ -39,7 +39,7 @@ ul {
 li {
 	list-style: none;
 	position: relative;
-	font-size: 14px;
+	font-size: 12px;
 }
 a {
 	text-decoration: none;
@@ -58,7 +58,6 @@ p > img, a > img {
 /****** Navigation Style *********/
 .menu > li {
 	display: inline-block;
-	margin-right: 30px;
     padding: 4px;
 }
 .menu > li:hover {
@@ -139,7 +138,7 @@ article img, article section {
 }
 article section {
 	padding-top: 0px;
-	width: 77%;
+	width: 75%;
 	box-shadow: none;
 }
 article > img {
@@ -179,7 +178,7 @@ aside img {
 /* Media Queries
 --------------------------------------------- */
 
-@media all and (max-width : 768px) {
+@media all and (max-width : 960px) {
 /****** General Style *********/
 body {
 	margin: 0px;
